@@ -45,6 +45,11 @@
     "rimraf": "^6.0.1"
   },
   "overrides": {
+    "eclint": {
+      "gulp-reporter": {
+        "axios": "0.33.0"
+      }
+    },
     "markdownlint-cli": {
       "glob": {
         "foreground-child": {
