@@ -51,11 +51,7 @@
       }
     },
     "markdownlint-cli": {
-      "glob": {
-        "foreground-child": {
-          "cross-spawn": "6.0.6"
-        }
-      }
+      "glob": "10.5.0"
     }
   }
 }
