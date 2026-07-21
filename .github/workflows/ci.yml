@@ -1,9 +1,12 @@
 name: CI
 
 on:
-  push:
-    branches:
-      - '**'
+  push:
+    branches:
+      - '**'
+  pull_request:
+    branches:
+      - '**'
 
 permissions:
   contents: read
@@ -23,10 +26,3 @@ jobs:
 
       - name: Integration test
         run: node integration-test.js
-
-      # Temporary: force CI fail on Felix upgrade PRs so we can test auto-remediation.
-      - name: Felix remediate test gate
-        if: startsWith(github.head_ref, 'felix/upgrade/')
-        run: |
-          echo "Intentional failure for Felix remediate testing"
-          exit 1
