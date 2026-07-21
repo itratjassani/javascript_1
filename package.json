@@ -50,6 +50,11 @@
         "axios": "0.33.0"
       }
     },
+    "eslint-find-rules": {
+      "yargs": {
+        "yargs-parser": "13.1.2"
+      }
+    },
     "markdownlint-cli": {
       "glob": {
         "foreground-child": {
