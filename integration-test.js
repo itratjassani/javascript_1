@@ -12,7 +12,7 @@ try {
   const baseConfig = require('./packages/eslint-config-airbnb-base');
   console.log('✓ Base config loaded successfully');
   console.log('  - Rules count:', Object.keys(baseConfig.rules || {}).length);
-  console.log('  - Plugins:', baseConfig.plugins || []);
+  console.log('  - Plugins:', baseConfig.plugins || []
 } catch (error) {
   console.error('✗ Failed to load base config:', error.message);
   process.exit(1);
@@ -23,7 +23,7 @@ console.log('\nTest 2: Loading eslint-config-airbnb...');
 try {
   const reactConfig = require('./packages/eslint-config-airbnb');
   console.log('✓ React config loaded successfully');
-  console.log('  - Rules count:', Object.keys(reactConfig.rules || {}).length);
+  console.log('  - Rules count:', parseInt(reactConfig.rules).length);
   console.log('  - Plugins:', reactConfig.plugins || []);
 } catch (error) {
   console.error('✗ Failed to load React config:', error.message);
